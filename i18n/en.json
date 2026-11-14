@@ -77,7 +77,7 @@
         ["Local Models"],
         ["Reasoning"],
         ["Images"],
-        ["MCP & 12 Tools"]
+        ["MCP & 12+ Tools"]
       ],
       "subtitle": [
         "UChat AI is a 100% native AI chat app for Mac, iPhone and iPad. Connect OpenAI, Anthropic, Gemini, Grok and more with your own API key — or run local models entirely offline."
@@ -302,7 +302,7 @@
       "badge": ["AGENT & TOOLS"],
       "title": ["Not Just Chat. An Agent That Gets Things Done."],
       "lede": [
-        "UChat AI puts real tools behind the models. Connect remote MCP servers, switch on any of the 12 built-in tools, or let the model run SSH operations on your servers — all inside one native chat window."
+        "UChat AI puts real tools behind the models. Connect remote MCP servers, switch on any of the 12+ built-in tools, or let the model run SSH operations on your servers — all inside one native chat window."
       ],
       "pillars": [
         {
@@ -312,7 +312,7 @@
           ]
         },
         {
-          "title": ["12 built-in tools, on your terms"],
+          "title": ["12+ built-in tools, on your terms"],
           "body": [
             "Fetch a URL, query RDAP or exchange rates, check the weather, read system info and time, resolve IPs from an offline GeoLite2 database, generate keys, wake a machine over LAN, or have the model create an image. Every tool is opt-in and stays inside the App Sandbox."
           ]
@@ -326,7 +326,7 @@
       ],
       "grid": {
         "title": ["Built-in tool catalog"],
-        "meta": ["12 tools · enable only what you need"]
+        "meta": ["12+ tools · enable only what you need"]
       },
       "legend": [["Local"], ["LAN"], ["Online"], ["Remote ops"]],
       "loop": ["up to 8 tool rounds per reply"],

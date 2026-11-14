@@ -31,7 +31,7 @@ Model lists, thinking and image-generation capabilities, and default parameters 
 ## Agent & Tools
 
 - **MCP servers:** add a streamable HTTP MCP server and UChat AI discovers its tools automatically, then hands them to the model alongside the built-in ones. Custom auth headers, per-tool switches, JSON import and automatic reconnect after network changes are included.
-- **12 built-in tools, all opt-in:** web fetch, RDAP, weather, exchange rates, offline GeoLite2 IP lookup, system info, current time, key generation, Wake-on-LAN, AI image generation and more. Every tool stays inside the App Sandbox.
+- **12+ built-in tools, all opt-in:** web fetch, RDAP, weather, exchange rates, offline GeoLite2 IP lookup, system info, current time, key generation, Wake-on-LAN, AI image generation and more. Every tool stays inside the App Sandbox.
 - **SSH remote operations:** around 30 actions — run remote commands and capture output, manage files over SFTP, inspect server status, control Docker containers. Credentials stay in the local database, so the model never has to ask for a password.
 - **Loop budget:** up to 8 model-to-tool-to-model rounds per reply.
 
