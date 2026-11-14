@@ -1,0 +1,26 @@
+{
+  "name": "uchat-sitegen",
+  "version": "1.0.0",
+  "private": true,
+  "description": "uchat.cn 官网静态生成器：EJS 模板 × 语言包（i18n）→ 生成多语言纯 HTML，输出到 out/，并生成 sitemap.xml / robots.txt 等 SEO 文件",
+  "type": "commonjs",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "serve": "node scripts/serve.js",
+    "check": "node scripts/check.js",
+    "prettier": "prettier . --write"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10"
+  },
+  "devDependencies": {
+    "@edgeone/types": "^1.0.2",
+    "@tailwindcss/cli": "^4.3.3",
+    "clean-css": "^5.3.3",
+    "html-minifier-terser": "^7.2.0",
+    "parse5": "^7.2.1",
+    "prettier": "3.9.10",
+    "tailwindcss": "^4.3.3",
+    "terser": "^5.51.2"
+  }
+}

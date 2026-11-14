@@ -1,0 +1,234 @@
+{
+  "site": {
+    "baseUrl": "https://uchat.cn",
+    "defaultLang": "en",
+    "urlStyle": "clean",
+    "brand": "UChat AI",
+    "lastmod": "auto",
+    "staticRoot": "public",
+    "copyFiles": ["favicon.ico", "llms.txt"],
+    "copyDirs": ["assets"],
+    "outputDir": "out",
+    "tailwind": {
+      "input": "input.css",
+      "output": "assets/tailwind.min.css"
+    },
+    "minifyJs": ["assets/script.js"],
+    "minifyCss": ["assets/style.css"]
+  },
+  "meta": {
+    "ogType": "website",
+    "ogSiteName": "UChat AI",
+    "ogImage": "/assets/uchat-ai.png",
+    "ogImageWidth": "512",
+    "ogImageHeight": "512",
+    "twitterCard": "summary_large_image",
+    "twitterImage": "/assets/uchat-ai.png",
+    "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+    "googlebot": "index, follow",
+    "revisitAfter": "7 days",
+    "manifest": "/assets/site.webmanifest",
+    "favicon": "/favicon.ico",
+    "css": ["/assets/tailwind.min.css", "/assets/style.css"],
+    "script": "/assets/script.js"
+  },
+  "langs": {
+    "en": {
+      "dir": "/",
+      "htmlLang": "en",
+      "label": "English",
+      "locale": "en_US",
+      "hreflang": "en"
+    },
+    "zh-hans": {
+      "dir": "/zh-hans/",
+      "htmlLang": "zh-Hans",
+      "label": "简体中文",
+      "locale": "zh_CN",
+      "hreflang": "zh-Hans"
+    },
+    "zh-hant": {
+      "dir": "/zh-hant/",
+      "htmlLang": "zh-Hant",
+      "label": "繁體中文",
+      "locale": "zh_TW",
+      "hreflang": "zh-Hant"
+    },
+    "ja": {
+      "dir": "/ja/",
+      "htmlLang": "ja",
+      "label": "日本語",
+      "locale": "ja_JP",
+      "hreflang": "ja"
+    },
+    "de": {
+      "dir": "/de/",
+      "htmlLang": "de",
+      "label": "Deutsch",
+      "locale": "de_DE",
+      "hreflang": "de"
+    },
+    "ru": {
+      "dir": "/ru/",
+      "htmlLang": "ru",
+      "label": "Русский",
+      "locale": "ru_RU",
+      "hreflang": "ru"
+    },
+    "fr": {
+      "dir": "/fr/",
+      "htmlLang": "fr",
+      "label": "Français",
+      "locale": "fr_FR",
+      "hreflang": "fr"
+    },
+    "es": {
+      "dir": "/es/",
+      "htmlLang": "es",
+      "label": "Español",
+      "locale": "es_ES",
+      "hreflang": "es"
+    },
+    "ko": {
+      "dir": "/ko/",
+      "htmlLang": "ko",
+      "label": "한국어",
+      "locale": "ko_KR",
+      "hreflang": "ko"
+    },
+    "pt-br": {
+      "dir": "/pt-br/",
+      "htmlLang": "pt-BR",
+      "label": "Português (Brasil)",
+      "locale": "pt_BR",
+      "hreflang": "pt-BR"
+    }
+  },
+  "pages": {
+    "index": {
+      "path": "/",
+      "changefreq": "weekly",
+      "priority": 0.9,
+      "enPriority": 1.0,
+      "sitemap": true,
+      "localized": true,
+      "nav": "index"
+    },
+    "404": {
+      "path": "/404",
+      "sitemap": false,
+      "localized": false,
+      "nav": "home"
+    }
+  },
+  "nav": {
+    "index": {
+      "container": "max-w-5xl",
+      "logoSize": "text-2xl",
+      "logoImage": "/assets/uchat-ai.png",
+      "links": [
+        {
+          "href": "#features"
+        },
+        {
+          "href": "#tools"
+        },
+        {
+          "href": "#providers"
+        },
+        {
+          "href": "#pricing"
+        },
+        {
+          "href": "#faq"
+        },
+        {
+          "href": "https://foxterm.app/"
+        }
+      ],
+      "cta": {
+        "href": "#download",
+        "labelKey": "nav.getApp.0",
+        "style": "index"
+      }
+    },
+    "home": {
+      "container": "max-w-4xl",
+      "logoSize": "text-xl",
+      "logoImage": "/assets/uchat-ai.png",
+      "links": [],
+      "cta": {
+        "href": "/",
+        "labelKey": "nav.backToHome.0",
+        "style": "legal"
+      }
+    }
+  },
+  "products": [
+    {
+      "href": "https://foxterm.app/",
+      "logo": "/assets/FoxTerm.svg",
+      "key": "brand.foxterm.0"
+    },
+    {
+      "href": "/",
+      "logo": "/assets/uchat-ai.png",
+      "key": "brand.uchatAI.0"
+    }
+  ],
+  "footer": {
+    "links": {
+      "index": [
+        {
+          "href": "https://foxterm.app/about",
+          "key": "footer.links.0.0",
+          "rel": "noopener noreferrer",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://foxterm.app/contact",
+          "key": "footer.links.1.0",
+          "rel": "noopener noreferrer",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://foxterm.app/privacy",
+          "key": "footer.links.2.0",
+          "rel": "noopener noreferrer",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://foxterm.app/terms",
+          "key": "footer.links.3.0",
+          "rel": "noopener noreferrer",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://github.com/foxterm",
+          "key": "footer.links.4.0",
+          "rel": "noopener noreferrer",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://blog.foxterm.app/",
+          "key": "footer.links.5.0",
+          "rel": "noopener noreferrer",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://security.foxterm.app/",
+          "key": "footer.links.6.0",
+          "rel": "noopener noreferrer",
+          "sep": false,
+          "target": true
+        }
+      ]
+    }
+  }
+}

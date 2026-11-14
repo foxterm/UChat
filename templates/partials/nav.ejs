@@ -1,0 +1,56 @@
+<header
+  class="sticky top-0 z-50 w-full bg-zinc-950/60 backdrop-blur-xl border-b border-white/[0.06] transition-all duration-300"
+>
+  <nav
+    class="<%= navCfg.container %> mx-auto px-4 sm:px-6 h-16 flex items-center justify-between relative z-20"
+  >
+    <a
+      href="<%= navCfg.logoHref %>"
+      class="flex items-center space-x-3 group focus:outline-none"
+    >
+      <div
+        class="relative flex-shrink-0 flex items-center justify-center cursor-default"
+      >
+        <img
+          src="<%= navCfg.logoImage %>"
+          alt=""
+          class="w-8 h-8 rounded-full ring-1 ring-white/10 shadow-sm transition-all duration-300 group-hover:ring-2 group-hover:ring-sky-400/50"
+        />
+      </div>
+      <span
+        class="text-base font-bold tracking-tight text-white flex items-center gap-1.5 group-hover:text-sky-400 transition-colors"
+      >
+        <%= t["nav.logo.0"] %>
+      </span>
+    </a>
+
+    <% if (navCfg.links && navCfg.links.length) { %>
+    <!-- Navigation Links -->
+    <div
+      class="hidden md:flex items-center space-x-8 text-xs font-medium tracking-wide text-zinc-400"
+    >
+      <% for (const [i, l] of navCfg.links.entries()) { %>
+      <a
+        href="<%= l.href %>"
+        class="hover:text-white transition-colors"
+        rel="<%= /^https?:/i.test(l.href) ? 'noopener' : '' %>"
+        ><%= t["nav.links." + i + ".0"] %></a
+      >
+      <% } %>
+    </div>
+    <% } %>
+
+    <div class="flex items-center space-x-3">
+      <%- langSwitcher %>
+      <a
+        href="<%= navCfg.cta.href %>"
+        class="relative h-8 px-3.5 text-[11px] font-semibold rounded-lg bg-sky-500 hover:bg-sky-400 border border-sky-400/30 text-white transition-all duration-200 flex items-center justify-center shadow-[0_0_15px_rgba(56,189,248,0.25)] hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] active:scale-95 overflow-hidden backdrop-blur-md"
+      >
+        <div
+          class="absolute inset-x-0 top-0 h-px bg-white/30 pointer-events-none"
+        ></div>
+        <span class="relative z-10"><%= t[navCfg.cta.labelKey] %></span>
+      </a>
+    </div>
+  </nav>
+</header>

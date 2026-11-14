@@ -1,0 +1,339 @@
+{
+  "_meta": {
+    "lang": "es",
+    "label": "Español",
+    "updated": "2026-11-14"
+  },
+  "_shared": {
+    "brand": {
+      "productsLabel": ["Productos"],
+      "foxterm": ["FoxTerm"],
+      "uchatAI": ["UChat AI"]
+    }
+  },
+  "index": {
+    "nav": {
+      "logo": ["UChat AI"],
+      "links": [
+        ["Funciones"],
+        ["Herramientas"],
+        ["Proveedores"],
+        ["Precios"],
+        ["FAQ"],
+        ["FoxTerm"]
+      ],
+      "langAria": "Idioma",
+      "langCurrent": ["Español"],
+      "getApp": ["Descargar"]
+    },
+    "hero": {
+      "badge": ["App de IA 100% nativa · Trae tu clave API · Gratis"],
+      "logoAlt": ["Icono de la app UChat AI"],
+      "title": ["Habla con todos los modelos,", "de forma nativa"],
+      "tags": [
+        ["Nativa"],
+        ["20+ proveedores"],
+        ["Modelos locales"],
+        ["Razonamiento"],
+        ["Imágenes"],
+        ["MCP y 12 herramientas"]
+      ],
+      "subtitle": [
+        "UChat AI es una app de chat de IA 100% nativa para Mac, iPhone y iPad. Conéctate a OpenAI, Anthropic, Gemini, Grok y más con tu propia clave API, o ejecuta modelos locales totalmente sin conexión."
+      ],
+      "cta": [
+        {
+          "alt": "Descargar en el App Store",
+          "caption": ["App Store"],
+          "label": ["Descargar UChat AI"]
+        }
+      ]
+    },
+    "trust": {
+      "items": [
+        {
+          "value": ["20+"],
+          "body": ["Proveedores de nube, agregadores y locales integrados"]
+        },
+        {
+          "value": ["$0"],
+          "body": ["De momento gratis, sin suscripción"]
+        },
+        {
+          "value": ["100%"],
+          "body": ["Swift nativo, sin Electron ni envoltorios web"]
+        },
+        {
+          "value": ["1"],
+          "body": ["Una app para macOS, iPhone y iPad"]
+        }
+      ]
+    },
+    "features": {
+      "badge": ["Por qué UChat AI"],
+      "title": ["Todos los modelos. Una app nativa."],
+      "lede": [
+        "Trae tus propias claves y habla con casi cualquier modelo, en la nube o en tu equipo."
+      ],
+      "cards": [
+        {
+          "title": ["100% nativa"],
+          "body": [
+            "Construida en Swift para las plataformas Apple. Sin Electron ni vistas web: arranque instantáneo y bajo consumo de memoria."
+          ]
+        },
+        {
+          "title": ["Todos los grandes proveedores de nube"],
+          "body": [
+            "OpenAI, Azure OpenAI, Anthropic, Google Gemini, xAI Grok, Mistral AI, Groq, Kimi (Moonshot) y MiniMax."
+          ]
+        },
+        {
+          "title": ["Agregadores integrados"],
+          "body": [
+            "Una sola clave para cientos de modelos vía OpenRouter, Together AI o Replicate."
+          ]
+        },
+        {
+          "title": ["Cualquier endpoint compatible"],
+          "body": [
+            "Apunta UChat AI a cualquier servidor compatible con OpenAI o Anthropic, incluidas direcciones LAN o remotas."
+          ]
+        },
+        {
+          "title": ["Local y sin conexión"],
+          "body": [
+            "Ejecuta Ollama, LM Studio o el motor GGUF integrado por completo en el proceso. No necesita clave API."
+          ]
+        },
+        {
+          "title": ["Razonamiento e imágenes"],
+          "body": [
+            "Ajusta el esfuerzo de razonamiento por modelo y genera imágenes en la conversación cuando el proveedor lo permite."
+          ]
+        }
+      ]
+    },
+    "providers": {
+      "badge": ["Proveedores"],
+      "title": ["Funciona con los modelos que ya usas"],
+      "lede": [
+        "Desde nubes de primera línea hasta endpoints autoalojados: cambia de proveedor en segundos."
+      ],
+      "groups": [
+        {
+          "name": ["Nube"],
+          "items": [
+            "OpenAI · Azure OpenAI · Anthropic · Google Gemini · Grok (xAI) · Mistral AI · Groq · Kimi · MiniMax"
+          ]
+        },
+        {
+          "name": ["Agregadores"],
+          "items": ["OpenRouter · Together AI · Replicate"]
+        },
+        {
+          "name": ["Protocolos compatibles"],
+          "items": [
+            "Cualquier endpoint compatible con OpenAI · Cualquier endpoint compatible con Anthropic"
+          ]
+        },
+        {
+          "name": ["Local y autoalojado"],
+          "items": ["Ollama · LM Studio · Motor GGUF integrado · Core ML"]
+        }
+      ],
+      "native": {
+        "badge": ["INTEGRACIONES NATIVAS, NO UN ENDPOINT GENÉRICO"],
+        "title": ["Cada proveedor tiene su propio adaptador"],
+        "body": [
+          "Anthropic usa la API Messages, Gemini generateContent, Ollama /api/chat, y el GGUF local se ejecuta en el proceso mediante llama.cpp sin ninguna petición HTTP. Los agregadores como OpenRouter, Together AI y Replicate tienen sus propios ámbitos de credenciales e IDs de modelo; los despliegues de Azure y los endpoints internacional y chino de MiniMax también se gestionan por separado. Las listas de modelos, la compatibilidad con razonamiento y generación de imágenes y los parámetros por defecto se detectan proveedor por proveedor. Los endpoints compatibles con OpenAI y Anthropic son una opción adicional para servicios propios, no un único conducto por el que pasan todos los modelos."
+        ]
+      }
+    },
+    "pricing": {
+      "badge": ["Precios"],
+      "title": ["Gratis, por ahora"],
+      "lede": [
+        "Durante el periodo gratuito, todas las funciones están desbloqueadas. Sin suscripción, sin anuncios, sin compras integradas."
+      ],
+      "free": {
+        "price": ["$0"],
+        "name": ["UChat AI"],
+        "tag": ["Gratis"],
+        "lede": [
+          "App completa, todos los proveedores, todas las actualizaciones."
+        ],
+        "items": [
+          ["Todas las funciones desbloqueadas"],
+          ["Todos los proveedores de nube y locales"],
+          ["Sin suscripción ni anuncios"]
+        ],
+        "button": ["Descargar gratis"]
+      },
+      "note": [
+        "Los precios pueden cambiar en el futuro: UChat AI es gratuito por ahora en el App Store."
+      ]
+    },
+    "faq": {
+      "badge": ["FAQ"],
+      "title": ["Preguntas frecuentes"],
+      "lede": ["Todo lo que necesitas saber sobre UChat AI."],
+      "items": [
+        {
+          "q": ["¿Qué es UChat AI?"],
+          "a": [
+            "UChat AI es una app de chat de IA 100% nativa para macOS, iPhone y iPad. Se conecta a proveedores de modelos en la nube con tu propia clave API y ejecuta modelos locales totalmente en tu dispositivo."
+          ]
+        },
+        {
+          "q": ["¿Cuesta algo?"],
+          "a": [
+            "No. UChat AI es gratuito por ahora en el App Store. Los precios pueden cambiar en el futuro, y cualquier cambio se anunciaría con antelación."
+          ]
+        },
+        {
+          "q": ["¿Qué proveedores admite?"],
+          "a": [
+            "OpenAI, Azure OpenAI, Anthropic, Google Gemini, xAI Grok, Mistral AI, Groq, Kimi y MiniMax, además de los agregadores OpenRouter, Together AI y Replicate. También funciona cualquier endpoint compatible con OpenAI o Anthropic."
+          ]
+        },
+        {
+          "q": ["¿Puedo usarlo sin clave API?"],
+          "a": [
+            "Sí. Los proveedores locales (Ollama, LM Studio y el motor GGUF integrado) se ejecutan por completo en el proceso y no necesitan clave API. Ollama y LM Studio también pueden apuntar a servidores LAN o remotos."
+          ]
+        },
+        {
+          "q": ["¿Dónde se guardan mis claves API?"],
+          "a": [
+            "Tus claves se guardan en tu dispositivo y se usan para hablar directamente con el proveedor que elijas. UChat AI no requiere cuenta."
+          ]
+        }
+      ]
+    },
+    "download": {
+      "title": ["Consigue UChat AI"],
+      "subtitle": ["Gratis en el App Store para Mac, iPhone y iPad."],
+      "button": {
+        "alt": "Descargar UChat AI en el App Store",
+        "label": ["Descargar en el App Store"]
+      },
+      "reqs": [
+        {
+          "label": ["macOS"],
+          "value": ["Requiere macOS 15 o posterior"]
+        },
+        {
+          "label": ["iOS"],
+          "value": ["Requiere iOS 18 o posterior"]
+        }
+      ],
+      "note": ["UChat AI comparte la "],
+      "legal": [["Política de Privacidad"], ["los Términos del Servicio"]],
+      "legalSep": [" y "],
+      "noteEnd": [" de FoxTerm."]
+    },
+    "footer": {
+      "copyright": [" FoxTerm."],
+      "links": [
+        ["Acerca de"],
+        ["Contacto"],
+        ["Privacidad"],
+        ["Términos del servicio"],
+        ["GitHub"],
+        ["Blog"],
+        ["Security Intel"]
+      ],
+      "icp": ["蜀ICP备2024075062号"],
+      "mirror": ["Este sitio:", " | Global:", "uchat.cn", "foxterm.app/uchat"],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift"
+        }
+      ]
+    },
+    "tools": {
+      "badge": ["AGENTE Y HERRAMIENTAS"],
+      "title": ["No es solo chat. Es un agente que trabaja."],
+      "lede": [
+        "UChat AI pone herramientas reales en manos de los modelos: conecta servidores MCP remotos, activa cualquiera de las 12 herramientas integradas o deja que el modelo ejecute operaciones SSH en tus servidores — todo en una única ventana de chat nativa."
+      ],
+      "pillars": [
+        {
+          "title": ["Servidores MCP en un clic"],
+          "body": [
+            "Añade un servidor MCP por HTTP streamable y UChat AI descubre sus herramientas automáticamente y se las entrega al modelo junto con las integradas. Cabeceras de autenticación personalizadas, interruptores por herramienta, importación JSON y reconexión automática tras cambios de red, todo incluido."
+          ]
+        },
+        {
+          "title": ["12 herramientas integradas, a tu medida"],
+          "body": [
+            "Obtener una URL, consultar RDAP o tipos de cambio, el tiempo, información del sistema y la hora, resolver IP con la base GeoLite2 sin conexión, generar claves, despertar un equipo por LAN o pedir al modelo que cree una imagen. Cada herramienta se activa manualmente y se ejecuta dentro del sandbox de la app."
+          ]
+        },
+        {
+          "title": ["Un verdadero kit de terminal remoto"],
+          "body": [
+            "La herramienta SSH incluye unas 30 acciones: ejecutar comandos remotos y capturar su salida, gestionar archivos por SFTP, consultar el estado del servidor y controlar contenedores Docker. Las credenciales se guardan en la base local, así que el modelo nunca pide una contraseña."
+          ]
+        }
+      ],
+      "grid": {
+        "title": ["Catálogo de herramientas integradas"],
+        "meta": ["12 herramientas · activa solo lo que necesitas"]
+      },
+      "legend": [["Local"], ["LAN"], ["En línea"], ["Ops remoto"]],
+      "loop": ["hasta 8 rondas de herramientas por respuesta"],
+      "stats": [
+        {
+          "body": ["Ciclos modelo → herramienta → modelo por respuesta"]
+        },
+        {
+          "body": ["Acciones SSH, de exec a Docker"]
+        },
+        {
+          "body": ["Herramientas integradas, todas opcionales"]
+        }
+      ]
+    }
+  },
+  "_seo": {
+    "index": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "UChat AI - Chat de IA 100% nativo para macOS e iOS | Gratis",
+      "description": "UChat AI es una app de chat de IA 100% nativa y gratuita para Mac, iPhone y iPad. Tu propia clave API para OpenAI, Anthropic, Gemini, Grok, Kimi, MiniMax y más, o modelos locales sin conexión.",
+      "keywords": "UChat AI, app de IA nativa, chat de IA macOS, chat de IA iOS, cliente OpenAI, cliente Anthropic, cliente Gemini, cliente Ollama, LM Studio, LLM local, GGUF, trae tu clave API, app de chat IA",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "Español",
+      "revisit-after": "7 days",
+      "og:type": "website",
+      "og:locale": "es_ES",
+      "og:locale:alternate": "zh_CN, zh_TW, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
+      "og:title": "UChat AI | Chat de IA 100% nativo para macOS e iOS",
+      "og:description": "Todos los modelos, una app nativa. Proveedores de nube con tu clave o modelos locales sin conexión. Gratis en el App Store.",
+      "og:url": "https://uchat.cn/es/",
+      "og:site_name": "UChat AI",
+      "og:image": "/assets/uchat-ai.png",
+      "og:image:width": "512",
+      "og:image:height": "512",
+      "og:image:alt": "Icono de la app UChat AI",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "UChat AI - Chat de IA nativo para macOS e iOS",
+      "twitter:description": "Todos los modelos, una app nativa. Gratis en el App Store.",
+      "twitter:image": "/assets/uchat-ai.png",
+      "twitter:image:alt": "Icono de la app UChat AI",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 15+, iOS 18+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 15.0 or later, iOS 18.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI es una app de chat de IA 100% nativa y gratuita para Mac, iPhone y iPad. Tu propia clave API para OpenAI, Anthropic, Gemini, Grok, Kimi, MiniMax y más, o modelos locales sin conexión.\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"},\"url\":\"https://uchat.cn/es/\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
+    }
+  }
+}

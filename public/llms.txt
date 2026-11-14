@@ -1,0 +1,81 @@
+# UChat AI
+
+> UChat AI is a free, 100% native AI chat app for macOS, iPhone and iPad. Bring your own API key for OpenAI, Anthropic, Google Gemini and more — or run local models entirely offline. No account, no analytics, no wrappers.
+
+> - Official Website (China): https://uchat.cn/
+> - Global product page: https://foxterm.app/uchat
+> - App Store: https://apps.apple.com/us/app/uchat-ai/id6503210454 (App ID 6503210454)
+> - Developer: FoxTerm — https://foxterm.app/
+> - Platforms: macOS 15.0+ and iOS/iPadOS 18.0+ only — no Windows, Android, or Linux desktop build
+> - Tech Stack: 100% native Swift; local GGUF inference runs in-process through llama.cpp with Metal acceleration. No Electron, no web wrappers
+> - Privacy: no account required, no analytics or tracking SDKs; your own API keys stay on-device in the system Keychain
+> - Licensing: free for now, all features unlocked, no subscription and no in-app purchases
+> - Localization: 10 languages served from localized URL paths (e.g. /zh-hans/, /de/, /ja/)
+> - Related hubs: blog.foxterm.app (development blog), security.foxterm.app (advisories), github.com/foxterm (open source)
+
+## Product Overview
+
+UChat AI puts every model behind one native chat window. Cloud providers are reached with your own key, aggregators give access to hundreds of models with a single key, and local providers run entirely on the device with no key at all. Reasoning effort, image input and image generation are tuned per model where the provider supports them.
+
+## Model Providers
+
+Each provider is integrated with its own native adapter rather than funnelled through one generic OpenAI-compatible endpoint:
+
+- **Cloud:** OpenAI, Azure OpenAI (deployment-aware), Anthropic (Messages API), Google Gemini (generateContent), xAI Grok, Mistral AI, Groq, Kimi (Moonshot), MiniMax (separate international and China endpoints).
+- **Aggregators:** OpenRouter, Together AI, Replicate — each with its own credential scope and model IDs.
+- **Compatible endpoints:** any OpenAI-compatible or Anthropic-compatible server, including LAN and remote addresses.
+- **Local & self-hosted:** Ollama (/api/chat), LM Studio, the built-in GGUF engine (in-process llama.cpp, no HTTP), Core ML, Hugging Face GGUF downloads.
+
+Model lists, thinking and image-generation capabilities, and default parameters are detected per provider.
+
+## Agent & Tools
+
+- **MCP servers:** add a streamable HTTP MCP server and UChat AI discovers its tools automatically, then hands them to the model alongside the built-in ones. Custom auth headers, per-tool switches, JSON import and automatic reconnect after network changes are included.
+- **12 built-in tools, all opt-in:** web fetch, RDAP, weather, exchange rates, offline GeoLite2 IP lookup, system info, current time, key generation, Wake-on-LAN, AI image generation and more. Every tool stays inside the App Sandbox.
+- **SSH remote operations:** around 30 actions — run remote commands and capture output, manage files over SFTP, inspect server status, control Docker containers. Credentials stay in the local database, so the model never has to ask for a password.
+- **Loop budget:** up to 8 model-to-tool-to-model rounds per reply.
+
+## Privacy & Security
+
+- **Keys stay local:** your own API keys are stored only on your device (in the system Keychain where available) and sent directly to the provider you configure. They are never received, proxied or stored by the developer.
+- **No account:** UChat AI requires no sign-up. Prompts, conversations, model outputs and attachments stay on your device unless you send them to an AI provider you choose.
+- **Offline option:** local providers run in-process and send nothing off-device.
+- **No telemetry:** no analytics or tracking SDKs are embedded in the app.
+- **Third-party processing:** when you use a cloud provider, the content you send is processed by that third party under its own privacy policy.
+
+## Platforms & Compatibility
+
+- **Supported:** macOS 15.0 (Sequoia) or later; iOS/iPadOS 18.0 or later (iPhone and iPad).
+- **Not supported:** Windows, Android, Linux desktop.
+- **Distribution:** Mac App Store and iOS App Store; Apple notarized and signed.
+
+## Pricing
+
+- **Free, for now:** every feature unlocked, all cloud and local providers included, no subscription, no ads, no in-app purchases. Pricing may change in the future and any change would be announced before it takes effect.
+
+## Frequently Asked Questions
+
+- **What is UChat AI?** A 100% native AI chat app for macOS, iPhone and iPad that connects to cloud providers with your own API key and runs local models on your device.
+- **Does it cost anything?** No. It is currently free on the App Store with all features unlocked.
+- **Can I use it without an API key?** Yes — Ollama, LM Studio and the built-in GGUF engine run entirely in-process.
+- **Where do my API keys live?** Only on your device, and they are sent directly to the provider you configure.
+- **Is it a web wrapper?** No Electron and no web views: native Swift, instant launch, low memory footprint.
+
+## Contact
+
+- **Product inquiries:** support@foxterm.app
+- **Developer contact:** admin@foxterm.app
+
+## Navigation Directory
+
+- [Homepage](https://uchat.cn/) — the UChat AI product page: features, agent tools, providers, pricing, FAQ and download.
+- [简体中文](https://uchat.cn/zh-hans/) · [繁體中文](https://uchat.cn/zh-hant/) · [日本語](https://uchat.cn/ja/) · [Deutsch](https://uchat.cn/de/) · [Русский](https://uchat.cn/ru/) · [Français](https://uchat.cn/fr/) · [Español](https://uchat.cn/es/) · [한국어](https://uchat.cn/ko/) · [Português (Brasil)](https://uchat.cn/pt-br/)
+- [Privacy Policy](https://foxterm.app/privacy) — shared by FoxTerm and UChat AI, including UChat AI provisions for API keys, AI providers and local models.
+- [Terms of Service](https://foxterm.app/terms) — shared by FoxTerm and UChat AI, including provisions for third-party AI services and generated output.
+- [About](https://foxterm.app/about) — the story and engineering philosophy behind FoxTerm and UChat AI.
+- [Contact & Support](https://foxterm.app/contact) — bug reporting and dedicated support channels.
+- [UChat AI on the global site](https://foxterm.app/uchat) — the same product page hosted by FoxTerm for visitors outside China.
+- [FoxTerm](https://foxterm.app/) — the sibling app: a native terminal and server management client for macOS and iOS.
+- [Tech Blog](https://blog.foxterm.app/) — development updates and system administration articles.
+- [Security Portal](https://security.foxterm.app/) — advisory releases and vulnerability disclosures.
+- [GitHub](https://github.com/foxterm) — open-source hub and issue tracking.

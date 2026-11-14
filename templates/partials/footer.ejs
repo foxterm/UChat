@@ -1,0 +1,105 @@
+<footer
+  class="max-w-7xl mx-auto px-6 py-8 border-t border-zinc-900 text-center text-xs text-zinc-500"
+>
+  <div class="flex flex-col items-center justify-center gap-2.5">
+    <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+      <p>
+        &copy; <span data-copyright-year="2026">2026</span
+        ><%= t["footer.copyright.0"] %>
+      </p>
+      <% for (const l of footerLinks) { %>
+        <% if (l.sep) { %>
+        <span class="hidden sm:inline text-zinc-800">|</span>
+        <% } %>
+        <a
+          href="<%= l.href %>"
+          <% if (l.target) { %>target="_blank"<% } %>
+          <% if (l.rel) { %>rel="noopener noreferrer"<% } %>
+          class="no-underline hover:text-sky-400 transition-colors"
+          ><%= t[l.key] %></a
+        >
+      <% } %>
+    </div>
+
+    <!-- Region & Filing -->
+    <div
+      class="flex flex-wrap items-center justify-center gap-2 text-zinc-500"
+    >
+      <a
+        class="is-cn no-underline inline-flex items-center gap-1 hover:text-sky-400 transition-colors"
+        href="https://beian.miit.gov.cn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg
+          class="w-3.5 h-3.5 opacity-70"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+          ></path>
+        </svg>
+        <span><%= t["footer.icp.0"] %></span>
+      </a>
+      <span class="hidden sm:inline text-zinc-800 is-cn">|</span>
+      <span class="text-[11px] text-zinc-600">
+        <%= t["footer.mirror.0"] %>
+        <span class="text-zinc-400"><%= t["footer.mirror.2"] %></span
+        ><%= t["footer.mirror.1"] %>
+        <a
+          href="https://foxterm.app/uchat"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="no-underline hover:text-zinc-400"
+          ><%= t["footer.mirror.3"] %></a
+        >
+      </span>
+    </div>
+
+    <!-- Products -->
+    <div
+      class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-zinc-500"
+    >
+      <span class="text-[11px] font-mono uppercase tracking-widest"
+        ><%= t["brand.productsLabel.0"] %></span
+      >
+      <% for (const p of productLinks) { %>
+      <a
+        href="<%= p.href %>"
+        rel="noopener"
+        class="no-underline inline-flex items-center gap-1.5 font-semibold text-zinc-400 hover:text-sky-400 transition-colors"
+      >
+        <img
+          src="<%= p.logo %>"
+          alt=""
+          class="w-4 h-4 rounded-full ring-1 ring-white/10"
+        />
+        <span><%= t[p.key] %></span>
+      </a>
+      <% } %>
+    </div>
+
+    <!-- Security & Trust Badges -->
+    <div
+      class="flex flex-wrap items-center justify-center gap-2.5 pt-2 border-t border-zinc-900"
+    >
+      <% for (const [i, badge] of [
+        "APPLE-NOTARIZED_%26_SIGNED-161618?style=flat-square&amp;logo=apple&amp;logoColor=fff&amp;labelColor=0d0d0e",
+        "SECURITY-APP_SANDBOX-161618?style=flat-square&amp;logo=apple&amp;logoColor=fff&amp;labelColor=0d0d0e",
+        "PRIVACY-ZERO_TELEMETRY-161618?style=flat-square&amp;logo=apple&amp;logoColor=fff&amp;labelColor=0d0d0e",
+        "ENGINE-NATIVE_SWIFT-161618?style=flat-square&amp;logo=swift&amp;logoColor=fff&amp;labelColor=0d0d0e",
+      ].entries()) { %>
+      <img
+        src="https://img.shields.io/badge/<%= badge %>"
+        alt="<%= t['footer.badges.' + i + '.alt'] %>"
+        class="h-6 opacity-70 hover:opacity-100 transition-opacity duration-200"
+      />
+      <% } %>
+    </div>
+  </div>
+</footer>

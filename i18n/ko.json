@@ -1,0 +1,335 @@
+{
+  "_meta": {
+    "lang": "ko",
+    "label": "한국어",
+    "updated": "2026-11-14"
+  },
+  "_shared": {
+    "brand": {
+      "productsLabel": ["제품"],
+      "foxterm": ["FoxTerm"],
+      "uchatAI": ["UChat AI"]
+    }
+  },
+  "index": {
+    "nav": {
+      "logo": ["UChat AI"],
+      "links": [
+        ["기능"],
+        ["도구"],
+        ["프로바이더"],
+        ["가격"],
+        ["FAQ"],
+        ["FoxTerm"]
+      ],
+      "langAria": "언어",
+      "langCurrent": ["한국어"],
+      "getApp": ["다운로드"]
+    },
+    "hero": {
+      "badge": ["100% 네이티브 AI 앱 · API 키 지참 · 무료"],
+      "logoAlt": ["UChat AI 앱 아이콘"],
+      "title": ["모든 모델과", "네이티브하게 대화하세요"],
+      "tags": [
+        ["네이티브"],
+        ["20+ 프로바이더"],
+        ["로컬 모델"],
+        ["추론 제어"],
+        ["이미지 생성"],
+        ["MCP & 12개 도구"]
+      ],
+      "subtitle": [
+        "UChat AI는 Mac, iPhone, iPad를 위한 100% 네이티브 AI 채팅 앱입니다. 직접 발급한 API 키로 OpenAI, Anthropic, Gemini, Grok 등에 연결하거나, 로컬 모델을 완전히 오프라인으로 실행할 수 있습니다."
+      ],
+      "cta": [
+        {
+          "alt": "App Store에서 다운로드",
+          "caption": ["App Store"],
+          "label": ["UChat AI 다운로드"]
+        }
+      ]
+    },
+    "trust": {
+      "items": [
+        {
+          "value": ["20+"],
+          "body": ["클라우드, 애그리게이터, 로컬 프로바이더 내장"]
+        },
+        {
+          "value": ["$0"],
+          "body": ["현재 완전 무료, 구독 불필요"]
+        },
+        {
+          "value": ["100%"],
+          "body": ["Swift 네이티브, Electron·웹 래퍼 없음"]
+        },
+        {
+          "value": ["1"],
+          "body": ["macOS, iPhone, iPad를 하나의 앱으로"]
+        }
+      ]
+    },
+    "features": {
+      "badge": ["UChat AI를 선택하는 이유"],
+      "title": ["모든 모델을 하나의 네이티브 앱으로"],
+      "lede": [
+        "직접 발급한 키로 클라우드와 내 컴퓨터의 거의 모든 모델에 연결하세요."
+      ],
+      "cards": [
+        {
+          "title": ["100% 네이티브"],
+          "body": [
+            "Apple 플랫폼을 위해 Swift로 네이티브 빌드되었습니다. Electron도 웹 뷰도 없어 실행이 빠르고 메모리 사용량이 낮습니다."
+          ]
+        },
+        {
+          "title": ["주요 클라우드 프로바이더 전부"],
+          "body": [
+            "OpenAI, Azure OpenAI, Anthropic, Google Gemini, xAI Grok, Mistral AI, Groq, Kimi(Moonshot), MiniMax를 지원합니다."
+          ]
+        },
+        {
+          "title": ["애그리게이터 내장"],
+          "body": [
+            "OpenRouter, Together AI, Replicate를 통해 키 하나로 수백 개의 모델을 사용할 수 있습니다."
+          ]
+        },
+        {
+          "title": ["호환 엔드포인트 무엇이든"],
+          "body": [
+            "OpenAI·Anthropic 호환 서버라면 어디든 지정할 수 있습니다. LAN이나 원격 주소도 가능합니다."
+          ]
+        },
+        {
+          "title": ["로컬 & 오프라인"],
+          "body": [
+            "Ollama, LM Studio, 내장 GGUF 엔진을 프로세스 내에서 직접 실행합니다. API 키가 필요 없습니다."
+          ]
+        },
+        {
+          "title": ["추론 & 이미지"],
+          "body": [
+            "모델별로 추론 강도를 조절하고, 프로바이더가 지원하면 대화 중에 바로 이미지를 생성합니다."
+          ]
+        }
+      ]
+    },
+    "providers": {
+      "badge": ["프로바이더"],
+      "title": ["이미 쓰고 있는 모델과 바로 연결"],
+      "lede": [
+        "1급 클라우드부터 셀프호스팅 엔드포인트까지, 몇 초 만에 전환하세요."
+      ],
+      "groups": [
+        {
+          "name": ["클라우드"],
+          "items": [
+            "OpenAI · Azure OpenAI · Anthropic · Google Gemini · Grok(xAI) · Mistral AI · Groq · Kimi · MiniMax"
+          ]
+        },
+        {
+          "name": ["애그리게이터"],
+          "items": ["OpenRouter · Together AI · Replicate"]
+        },
+        {
+          "name": ["호환 프로토콜"],
+          "items": ["모든 OpenAI 호환 · 모든 Anthropic 호환 엔드포인트"]
+        },
+        {
+          "name": ["로컬 & 셀프호스팅"],
+          "items": ["Ollama · LM Studio · 내장 GGUF 엔진 · Core ML"]
+        }
+      ],
+      "native": {
+        "badge": ["공급자별 네이티브 연동 · 범용 호환 엔드포인트 아님"],
+        "title": ["공급자마다 전용 어댑터가 있습니다"],
+        "body": [
+          "Anthropic은 Messages API, Gemini는 generateContent, Ollama는 /api/chat을 사용하고, 로컬 GGUF는 llama.cpp로 프로세스 내에서 추론하므로 HTTP 요청이 전혀 없습니다. OpenRouter, Together AI, Replicate 같은 통합 플랫폼도 고유한 인증 범위와 모델 ID를 가지며, Azure 배포명과 MiniMax 국제/중국 엔드포인트도 별도로 처리됩니다. 모델 목록, 사고·이미지 생성 지원, 기본 파라미터 역시 공급자별로 감지합니다. OpenAI / Anthropic 호환 엔드포인트는 자체 서버를 위한 추가 옵션일 뿐, 모든 모델을 하나의 통로에 억지로 넣는 구조가 아닙니다."
+        ]
+      }
+    },
+    "pricing": {
+      "badge": ["가격"],
+      "title": ["당분간 무료"],
+      "lede": [
+        "무료 기간 동안 모든 기능이 잠금 해제됩니다. 구독도, 광고도, 인앱 결제도 없습니다."
+      ],
+      "free": {
+        "price": ["$0"],
+        "name": ["UChat AI"],
+        "tag": ["무료"],
+        "lede": ["완전한 앱, 모든 프로바이더, 지속적인 업데이트."],
+        "items": [
+          ["모든 기능 잠금 해제"],
+          ["모든 클라우드·로컬 프로바이더"],
+          ["구독·광고 없음"]
+        ],
+        "button": ["무료로 다운로드"]
+      },
+      "note": [
+        "가격은 추후 변경될 수 있습니다. 현재 UChat AI는 App Store에서 무료입니다."
+      ]
+    },
+    "faq": {
+      "badge": ["FAQ"],
+      "title": ["자주 묻는 질문"],
+      "lede": ["UChat AI에 대해 알아야 할 모든 것."],
+      "items": [
+        {
+          "q": ["UChat AI가 무엇인가요?"],
+          "a": [
+            "UChat AI는 macOS, iPhone, iPad를 위한 100% 네이티브 AI 채팅 앱입니다. 직접 발급한 API 키로 클라우드 모델 프로바이더에 연결하거나, 기기에서 완전히 로컬 모델을 실행할 수 있습니다."
+          ]
+        },
+        {
+          "q": ["요금이 드나요?"],
+          "a": [
+            "아니요. 현재 UChat AI는 App Store에서 무료입니다. 가격은 추후 변경될 수 있으며, 변경 시 사전에 공지됩니다."
+          ]
+        },
+        {
+          "q": ["어떤 프로바이더를 지원하나요?"],
+          "a": [
+            "OpenAI, Azure OpenAI, Anthropic, Google Gemini, xAI Grok, Mistral AI, Groq, Kimi, MiniMax와 OpenRouter, Together AI, Replicate 애그리게이터를 지원합니다. OpenAI·Anthropic 호환 엔드포인트도 사용할 수 있습니다."
+          ]
+        },
+        {
+          "q": ["API 키 없이 사용할 수 있나요?"],
+          "a": [
+            "네. 로컬 프로바이더(Ollama, LM Studio, 내장 GGUF 엔진)는 프로세스 내에서 완전히 작동하며 API 키가 필요 없습니다. Ollama와 LM Studio는 LAN이나 원격 서버를 지정할 수도 있습니다."
+          ]
+        },
+        {
+          "q": ["제 API 키는 어디에 저장되나요?"],
+          "a": [
+            "API 키는 기기에만 저장되며, 선택한 프로바이더와 직접 통신할 때만 사용됩니다. UChat AI는 계정 등록이 필요 없습니다."
+          ]
+        }
+      ]
+    },
+    "download": {
+      "title": ["UChat AI 받기"],
+      "subtitle": ["App Store에서 무료. Mac, iPhone, iPad 지원."],
+      "button": {
+        "alt": "App Store에서 UChat AI 다운로드",
+        "label": ["App Store에서 다운로드"]
+      },
+      "reqs": [
+        {
+          "label": ["macOS"],
+          "value": ["macOS 15 이상 필요"]
+        },
+        {
+          "label": ["iOS"],
+          "value": ["iOS 18 이상 필요"]
+        }
+      ],
+      "note": ["UChat AI는 FoxTerm의"],
+      "legal": [["개인정보 처리방침"], ["서비스 약관"]],
+      "legalSep": ["과"],
+      "noteEnd": ["을 적용합니다."]
+    },
+    "footer": {
+      "copyright": [" FoxTerm."],
+      "links": [
+        ["소개"],
+        ["문의하기"],
+        ["개인정보 처리방침"],
+        ["서비스 약관"],
+        ["GitHub"],
+        ["Blog"],
+        ["Security Intel"]
+      ],
+      "icp": ["蜀ICP备2024075062号"],
+      "mirror": ["현재 사이트:", " | 글로벌:", "uchat.cn", "foxterm.app/uchat"],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift"
+        }
+      ]
+    },
+    "tools": {
+      "badge": ["AGENT & TOOLS"],
+      "title": ["채팅을 넘어, 실제로 일하는 에이전트"],
+      "lede": [
+        "UChat AI는 모델에 실제 도구를 쥐여 줍니다. 원격 MCP 서버 연결, 12개 내장 도구의 선택적 활성화, 서버에 대한 SSH 작업까지 —— 모두 하나의 네이티브 채팅 창에서 이루어집니다."
+      ],
+      "pillars": [
+        {
+          "title": ["MCP 서버, 클릭 한 번으로"],
+          "body": [
+            "streamable HTTP MCP 서버를 추가하면 UChat AI가 도구를 자동으로 탐지해 내장 도구와 함께 모델에 전달합니다. 사용자 지정 인증 헤더, 도구별 스위치, JSON 가져오기, 네트워크 복구 후 자동 재연결까지 기본 제공됩니다."
+          ]
+        },
+        {
+          "title": ["내장 도구 12개, 필요한 것만"],
+          "body": [
+            "URL 가져오기, RDAP·환율 조회, 날씨, 시스템 정보와 시간, 오프라인 GeoLite2 DB로 IP 조회, 키 생성, LAN을 통한 기기 깨우기, 모델의 이미지 생성이 가능합니다. 모든 도구는 직접 켜야 하며 App Sandbox 안에서만 동작합니다."
+          ]
+        },
+        {
+          "title": ["진짜 원격 터미널 도구 모음"],
+          "body": [
+            "SSH 도구에는 약 30가지 액션이 들어 있습니다. 원격 명령 실행과 출력 캡처, SFTP 파일 관리, 서버 상태 확인, Docker 컨테이너 제어. 자격 증명은 로컬 DB에 보관되므로 모델이 비밀번호를 묻지 않습니다."
+          ]
+        }
+      ],
+      "grid": {
+        "title": ["내장 도구 목록"],
+        "meta": ["12개 도구 · 필요한 것만 활성화"]
+      },
+      "legend": [["로컬"], ["LAN"], ["온라인"], ["원격 운영"]],
+      "loop": ["응답당 최대 8회 도구 루프"],
+      "stats": [
+        {
+          "body": ["응답당 ‘모델 → 도구 → 모델’ 순환 횟수"]
+        },
+        {
+          "body": ["SSH 액션, exec부터 Docker까지"]
+        },
+        {
+          "body": ["내장 도구, 모두 선택 활성화"]
+        }
+      ]
+    }
+  },
+  "_seo": {
+    "index": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "UChat AI - macOS·iOS용 100% 네이티브 AI 채팅 | 무료",
+      "description": "UChat AI는 Mac, iPhone, iPad를 위한 100% 네이티브 AI 채팅 앱입니다. 직접 발급한 API 키로 OpenAI, Anthropic, Gemini, Grok, Kimi, MiniMax 등에 연결하거나 로컬 모델을 오프라인으로 실행하세요. 현재 무료.",
+      "keywords": "UChat AI, 네이티브 AI 앱, macOS AI 채팅, iOS AI 채팅, OpenAI 클라이언트, Anthropic 클라이언트, Gemini 클라이언트, Ollama 클라이언트, LM Studio, 로컬 LLM, GGUF, API 키 지참, AI 채팅 앱",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "한국어",
+      "revisit-after": "7 days",
+      "og:type": "website",
+      "og:locale": "ko_KR",
+      "og:locale:alternate": "zh_CN, zh_TW, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
+      "og:title": "UChat AI | macOS·iOS용 100% 네이티브 AI 채팅",
+      "og:description": "모든 모델을 하나의 네이티브 앱으로. 내 키로 클라우드 프로바이더, 로컬 모델은 오프라인으로. App Store에서 무료.",
+      "og:url": "https://uchat.cn/ko/",
+      "og:site_name": "UChat AI",
+      "og:image": "/assets/uchat-ai.png",
+      "og:image:width": "512",
+      "og:image:height": "512",
+      "og:image:alt": "UChat AI 앱 아이콘",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "UChat AI - 네이티브 AI 채팅(macOS·iOS)",
+      "twitter:description": "모든 모델을 하나의 네이티브 앱으로. App Store에서 무료.",
+      "twitter:image": "/assets/uchat-ai.png",
+      "twitter:image:alt": "UChat AI 앱 아이콘",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 15+, iOS 18+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 15.0 or later, iOS 18.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI는 Mac, iPhone, iPad를 위한 100% 네이티브 AI 채팅 앱입니다. 직접 발급한 API 키로 OpenAI, Anthropic, Gemini, Grok, Kimi, MiniMax 등에 연결하거나 로컬 모델을 오프라인으로 실행하세요. 현재 무료.\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"},\"url\":\"https://uchat.cn/ko/\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
+    }
+  }
+}

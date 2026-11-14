@@ -1,0 +1,327 @@
+{
+  "_meta": {
+    "lang": "zh-hant",
+    "label": "繁體中文",
+    "updated": "2026-11-14"
+  },
+  "_shared": {
+    "brand": {
+      "productsLabel": ["產品"],
+      "foxterm": ["FoxTerm"],
+      "uchatAI": ["UChat AI"]
+    }
+  },
+  "index": {
+    "nav": {
+      "logo": ["UChat AI"],
+      "links": [
+        ["功能"],
+        ["工具"],
+        ["模型供應商"],
+        ["定價"],
+        ["常見問題"],
+        ["FoxTerm"]
+      ],
+      "langAria": "語言",
+      "langCurrent": ["繁體中文"],
+      "getApp": ["下載 App"]
+    },
+    "hero": {
+      "badge": ["100% 原生 AI App · 自帶 API Key · 免費"],
+      "logoAlt": ["UChat AI App 圖示"],
+      "title": ["與每一個模型對話，", "100% 原生"],
+      "tags": [
+        ["原生"],
+        ["20+ 供應商"],
+        ["本機模型"],
+        ["深度思考"],
+        ["圖像生成"],
+        ["MCP 與 12 個工具"]
+      ],
+      "subtitle": [
+        "UChat AI 是一款 100% 原生的 AI 聊天 App，支援 Mac、iPhone 與 iPad。使用自己的 API Key 連接 OpenAI、Anthropic、Gemini、Grok 等雲端服務，或在本機離線執行模型。"
+      ],
+      "cta": [
+        {
+          "alt": "在 App Store 下載",
+          "caption": ["App Store"],
+          "label": ["下載 UChat AI"]
+        }
+      ]
+    },
+    "trust": {
+      "items": [
+        {
+          "value": ["20+"],
+          "body": ["內建雲端供應商、聚合平台與本機模型接入"]
+        },
+        {
+          "value": ["$0"],
+          "body": ["目前完全免費，無需訂閱"]
+        },
+        {
+          "value": ["100%"],
+          "body": ["以 Swift 原生打造，無 Electron、無網頁殼"]
+        },
+        {
+          "value": ["1"],
+          "body": ["一個 App 同時支援 macOS、iPhone 與 iPad"]
+        }
+      ]
+    },
+    "features": {
+      "badge": ["為什麼選擇 UChat AI"],
+      "title": ["所有模型，一個原生 App"],
+      "lede": ["自帶 API Key，連接雲端或本機上的幾乎任何模型。"],
+      "cards": [
+        {
+          "title": ["100% 原生"],
+          "body": [
+            "為 Apple 平台以 Swift 原生打造，沒有 Electron、沒有網頁殼，啟動飛快、記憶體占用極低。"
+          ]
+        },
+        {
+          "title": ["主流雲端供應商齊全"],
+          "body": [
+            "OpenAI、Azure OpenAI、Anthropic、Google Gemini、xAI Grok、Mistral AI、Groq、Kimi（月之暗面）、MiniMax 一應俱全。"
+          ]
+        },
+        {
+          "title": ["聚合平台內建"],
+          "body": [
+            "透過 OpenRouter、Together AI 或 Replicate，一把 Key 即可使用數百個模型。"
+          ]
+        },
+        {
+          "title": ["任意相容端點"],
+          "body": [
+            "可將 UChat AI 指向任何 OpenAI 或 Anthropic 相容協定的伺服器，包括區網或遠端位址。"
+          ]
+        },
+        {
+          "title": ["本機與離線"],
+          "body": [
+            "在程序內直接執行 Ollama、LM Studio 或內建 GGUF 引擎，無需任何 API Key。"
+          ]
+        },
+        {
+          "title": ["思考與圖像"],
+          "body": [
+            "依模型調整思考（推理）強度，並在對話中直接生成圖像（視供應商支援而定）。"
+          ]
+        }
+      ]
+    },
+    "providers": {
+      "badge": ["模型供應商"],
+      "title": ["接得上你正在用的每一個模型"],
+      "lede": ["從一線雲端供應商到自行託管的端點，幾秒鐘即可切換。"],
+      "groups": [
+        {
+          "name": ["雲端供應商"],
+          "items": [
+            "OpenAI · Azure OpenAI · Anthropic · Google Gemini · Grok（xAI）· Mistral AI · Groq · Kimi · MiniMax"
+          ]
+        },
+        {
+          "name": ["聚合平台"],
+          "items": ["OpenRouter · Together AI · Replicate"]
+        },
+        {
+          "name": ["相容協定"],
+          "items": ["任意 OpenAI 相容 · 任意 Anthropic 相容端點"]
+        },
+        {
+          "name": ["本機與自行託管"],
+          "items": ["Ollama · LM Studio · 內建 GGUF 引擎 · Core ML"]
+        }
+      ],
+      "native": {
+        "badge": ["逐家原生介接 · 不是一個通用相容端點"],
+        "title": ["每家供應商都有自己的接入方式"],
+        "body": [
+          "Anthropic 走 Messages API，Gemini 走 generateContent，Ollama 走 /api/chat，本機 GGUF 則由 llama.cpp 在行程內直接推論，完全不發 HTTP 請求。OpenRouter、Together AI、Replicate 等聚合平台各有獨立的憑證作用域與模型 ID；Azure 部署名稱、MiniMax 國際與中國雙端點也分開處理。模型清單、思考與圖片生成能力、預設參數都依供應商逐一偵測。OpenAI / Anthropic 相容端點只是串接自建服務時的額外選項，並不是把所有模型硬塞進同一條通道。"
+        ]
+      }
+    },
+    "pricing": {
+      "badge": ["定價"],
+      "title": ["限時免費"],
+      "lede": ["免費期間所有功能全部開放，沒有訂閱、沒有廣告、沒有內購。"],
+      "free": {
+        "price": ["$0"],
+        "name": ["UChat AI"],
+        "tag": ["免費"],
+        "lede": ["完整 App、全部供應商、持續更新。"],
+        "items": [
+          ["全部功能解鎖"],
+          ["全部雲端與本機供應商"],
+          ["無訂閱、無廣告"]
+        ],
+        "button": ["免費下載"]
+      },
+      "note": ["定價未來可能調整——UChat AI 目前在 App Store 限時免費。"]
+    },
+    "faq": {
+      "badge": ["常見問題"],
+      "title": ["關於 UChat AI 的常見問題"],
+      "lede": ["你想了解的，都在這裡。"],
+      "items": [
+        {
+          "q": ["什麼是 UChat AI？"],
+          "a": [
+            "UChat AI 是一款為 macOS、iPhone 與 iPad 打造的 100% 原生 AI 聊天 App。它使用你自己的 API Key 連接雲端模型供應商，也可以完全在你的裝置上執行本機模型。"
+          ]
+        },
+        {
+          "q": ["需要付費嗎？"],
+          "a": [
+            "不需要。UChat AI 目前在 App Store 限時免費。定價未來可能調整，如有變動會提前公布。"
+          ]
+        },
+        {
+          "q": ["支援哪些供應商？"],
+          "a": [
+            "OpenAI、Azure OpenAI、Anthropic、Google Gemini、xAI Grok、Mistral AI、Groq、Kimi、MiniMax，以及 OpenRouter、Together AI、Replicate 等聚合平台；任何 OpenAI 或 Anthropic 相容端點同樣可用。"
+          ]
+        },
+        {
+          "q": ["沒有 API Key 可以用嗎？"],
+          "a": [
+            "可以。本機供應商——Ollama、LM Studio 與內建 GGUF 引擎——完全在程序內執行，無需任何 API Key。Ollama 與 LM Studio 還可以指向區網或遠端伺服器。"
+          ]
+        },
+        {
+          "q": ["我的 API Key 存在哪裡？"],
+          "a": [
+            "你的 API Key 只保存在你的裝置上，並直接用於連接你所選擇的供應商。UChat AI 無需註冊帳號。"
+          ]
+        }
+      ]
+    },
+    "download": {
+      "title": ["取得 UChat AI"],
+      "subtitle": ["App Store 限時免費，支援 Mac、iPhone 與 iPad。"],
+      "button": {
+        "alt": "在 App Store 下載 UChat AI",
+        "label": ["在 App Store 下載"]
+      },
+      "reqs": [
+        {
+          "label": ["macOS"],
+          "value": ["需要 macOS 15 或以上版本"]
+        },
+        {
+          "label": ["iOS"],
+          "value": ["需要 iOS 18 或以上版本"]
+        }
+      ],
+      "note": ["UChat AI 遵循 FoxTerm 官網的"],
+      "legal": [["隱私權政策"], ["服務條款"]],
+      "legalSep": ["與"],
+      "noteEnd": ["。"]
+    },
+    "footer": {
+      "copyright": [" FoxTerm."],
+      "links": [
+        ["關於"],
+        ["聯絡我們"],
+        ["隱私權政策"],
+        ["服務條款"],
+        ["GitHub"],
+        ["Blog"],
+        ["Security Intel"]
+      ],
+      "icp": ["蜀ICP备2024075062号"],
+      "mirror": ["本站：", " | 全球站：", "uchat.cn", "foxterm.app/uchat"],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift"
+        }
+      ]
+    },
+    "tools": {
+      "badge": ["AGENT 與工具"],
+      "title": ["不只是聊天，是能做事的 Agent"],
+      "lede": [
+        "UChat AI 讓模型真正能呼叫工具：連接遠端 MCP 伺服器、按需開啟 12 個內建工具，或讓模型直接在你的伺服器上執行 SSH 維運 —— 全部在一個原生聊天視窗裡完成。"
+      ],
+      "pillars": [
+        {
+          "title": ["MCP 伺服器，一鍵接入"],
+          "body": [
+            "新增一個支援 streamable HTTP 的 MCP 伺服器，UChat AI 會自動探索它的工具，並與內建工具一起交給模型呼叫。自訂鑑權請求標頭、依工具開關、JSON 批次匯入、網路恢復後自動重連，全部內建。"
+          ]
+        },
+        {
+          "title": ["12 個內建工具，按需開啟"],
+          "body": [
+            "抓取網頁、查詢 RDAP 與匯率、查天氣、讀取系統資訊與時間、用離線 GeoLite2 庫解析 IP、產生金鑰、透過區域網路喚醒設備，或讓模型直接產圖。每個工具都需手動開啟，且只在 App 沙盒內執行。"
+          ]
+        },
+        {
+          "title": ["真正的遠端終端工具箱"],
+          "body": [
+            "SSH 工具內建約 30 個動作：遠端執行命令並擷取輸出、透過 SFTP 管理檔案、檢視伺服器狀態、操控 Docker 容器。憑證保存在本機資料庫，模型永遠不必向你索取密碼。"
+          ]
+        }
+      ],
+      "grid": {
+        "title": ["內建工具清單"],
+        "meta": ["12 個工具 · 只開你需要的"]
+      },
+      "legend": [["本機"], ["區域網路"], ["聯網"], ["遠端維運"]],
+      "loop": ["單次回覆最多 8 輪工具循環"],
+      "stats": [
+        {
+          "body": ["單次回覆的「模型 → 工具 → 模型」輪次"]
+        },
+        {
+          "body": ["SSH 動作，從命令執行到 Docker"]
+        },
+        {
+          "body": ["內建工具，全部按需開啟"]
+        }
+      ]
+    }
+  },
+  "_seo": {
+    "index": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "UChat AI - 100% 原生 AI 聊天 App（macOS 與 iOS）| 免費",
+      "description": "UChat AI 是一款限時免費的 100% 原生 AI 聊天 App，支援 Mac、iPhone 與 iPad。自帶 API Key 連接 OpenAI、Anthropic、Gemini、Grok、Kimi、MiniMax 等，或在本機離線執行模型。",
+      "keywords": "UChat AI, 原生 AI App, macOS AI 聊天, iOS AI 聊天, OpenAI 客戶端, Anthropic 客戶端, Gemini 客戶端, Ollama 客戶端, LM Studio, 本地大模型, GGUF, 自帶 API Key, AI 聊天 App",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "繁體中文",
+      "revisit-after": "7 days",
+      "og:type": "website",
+      "og:locale": "zh_TW",
+      "og:locale:alternate": "zh_CN, zh_TW, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
+      "og:title": "UChat AI | 100% 原生 AI 聊天 App（macOS 與 iOS）",
+      "og:description": "所有模型，一個原生 App。自帶 Key 連接雲端供應商，或離線執行本機模型。App Store 限時免費。",
+      "og:url": "https://uchat.cn/zh-hant/",
+      "og:site_name": "UChat AI",
+      "og:image": "/assets/uchat-ai.png",
+      "og:image:width": "512",
+      "og:image:height": "512",
+      "og:image:alt": "UChat AI App 圖示",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "UChat AI - 原生 AI 聊天 App（macOS 與 iOS）",
+      "twitter:description": "所有模型，一個原生 App。App Store 限時免費。",
+      "twitter:image": "/assets/uchat-ai.png",
+      "twitter:image:alt": "UChat AI App 圖示",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 15+, iOS 18+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 15.0 or later, iOS 18.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI 是一款限時免費的 100% 原生 AI 聊天 App，支援 Mac、iPhone 與 iPad。自帶 API Key 連接 OpenAI、Anthropic、Gemini、Grok、Kimi、MiniMax 等，或在本機離線執行模型。\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"},\"url\":\"https://uchat.cn/zh-hant/\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
+    }
+  }
+}

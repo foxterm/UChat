@@ -1,0 +1,32 @@
+<div class="lang-switcher">
+  <details class="lang-dd">
+    <summary class="lang-dd-btn" aria-label="<%= t['nav.langAria'] %>">
+      <img
+        src="/assets/globe.svg"
+        alt="<%= t['nav.langCurrent.0'] %>"
+        class="lang-dd-globe"
+      />
+      <span class="lang-dd-current"><%= t["nav.langCurrent.0"] %></span>
+      <span class="lang-dd-caret" aria-hidden="true"></span>
+    </summary>
+    <ul class="lang-dd-menu">
+      <% for (const l of langs) { %>
+      <li>
+        <% if (l.code === lang.code) { %>
+        <span class="lang-dd-item lang-dd-active" aria-current="true"
+          ><%= l.label %></span
+        >
+        <% } else { %>
+        <a
+          class="lang-dd-item"
+          href="<%= urlPath(l.dir, pageRel) %>"
+          lang="<%= l.hreflang %>"
+          hreflang="<%= l.hreflang %>"
+          ><%= l.label %></a
+        >
+        <% } %>
+      </li>
+      <% } %>
+    </ul>
+  </details>
+</div>
