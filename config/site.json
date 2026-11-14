@@ -6,7 +6,7 @@
     "brand": "UChat AI",
     "lastmod": "auto",
     "staticRoot": "public",
-    "copyFiles": ["favicon.ico", "llms.txt"],
+    "copyFiles": ["favicon.ico", "llms.txt","appcast.xml"],
     "copyDirs": ["assets"],
     "outputDir": "out",
     "tailwind": {
