@@ -202,10 +202,15 @@
     "download": {
       "title": ["获取 UChat AI"],
       "subtitle": ["App Store 限时免费，支持 Mac、iPhone 与 iPad。"],
-      "button": {
-        "alt": "在 App Store 下载 UChat AI",
-        "label": ["在 App Store 下载"]
-      },
+      "buttons": [
+        {
+          "alt": "在 App Store 下载 UChat AI",
+          "label": ["在 App Store 下载"]
+        },
+        {
+          "label": ["公证版下载（macOS）"]
+        }
+      ],
       "reqs": [
         {
           "label": ["macOS"],

@@ -61,6 +61,9 @@ flowchart LR
 - 新增文案要覆盖全部 10 个语言包（或接受英文回退），然后跑 `npm run check`——它会报出任何从未被渲染的值。
 - 站内链接自动加语言前缀（`/zh-hans/…`）；以 `http(s):`、`//`、`#` 开头的链接原样保留。
   因此跨产品与协议链接在 `config/site.json` 里写成绝对地址 `https://foxterm.app/…`。
+- 下载入口写死在 `templates/index.ejs` 的 `#download` 区块：App Store 与 macOS 公证版
+  `https://github.com/foxterm/UChat/releases/latest/download/UChat.dmg`，任一语言缺链接时
+  `npm run check` 会失败。Sparkle 自动更新读取 `public/appcast.xml`，构建后输出到 `/appcast.xml`。
 - 版权年份不写死：`script.js` 会把 `[data-copyright-year]` 改成 `2026–<当前年>`。
 - hreflang 与 `x-default` 由 `config/langs` 生成，全部指向 `uchat.cn` 自己；
   全球站页面 `https://foxterm.app/uchat` 只出现在页脚镜像行和地区提示条里。

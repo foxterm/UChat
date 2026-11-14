@@ -67,6 +67,11 @@ flowchart LR
 - Internal links are localized automatically (`/zh-hans/…`); anything starting with `http(s):`,
   `//` or `#` is left untouched. Cross-product and legal links therefore go in `config/site.json`
   as absolute `https://foxterm.app/…` URLs.
+- Downloads are hardcoded in the `#download` block of `templates/index.ejs`: the App Store
+  listing and the notarized macOS disk image
+  `https://github.com/foxterm/UChat/releases/latest/download/UChat.dmg`. `npm run check` fails
+  if either link is missing from a locale. Sparkle picks up `public/appcast.xml`, which is
+  copied to `/appcast.xml`.
 - Copyright years are never hardcoded: `script.js` rewrites `[data-copyright-year]` to
   `2026–<current year>`.
 - hreflang alternates and `x-default` are generated from `config/langs` and stay inside

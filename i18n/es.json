@@ -214,10 +214,15 @@
     "download": {
       "title": ["Consigue UChat AI"],
       "subtitle": ["Gratis en el App Store para Mac, iPhone y iPad."],
-      "button": {
-        "alt": "Descargar UChat AI en el App Store",
-        "label": ["Descargar en el App Store"]
-      },
+      "buttons": [
+        {
+          "alt": "Descargar UChat AI en el App Store",
+          "label": ["Descargar en el App Store"]
+        },
+        {
+          "label": ["Edición notarizada para macOS"]
+        }
+      ],
       "reqs": [
         {
           "label": ["macOS"],

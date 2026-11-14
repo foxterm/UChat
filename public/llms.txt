@@ -47,7 +47,7 @@ Model lists, thinking and image-generation capabilities, and default parameters 
 
 - **Supported:** macOS 15.0 (Sequoia) or later; iOS/iPadOS 18.0 or later (iPhone and iPad).
 - **Not supported:** Windows, Android, Linux desktop.
-- **Distribution:** Mac App Store and iOS App Store; Apple notarized and signed.
+- **Distribution:** Mac App Store and iOS App Store; Apple notarized and signed. A notarized macOS disk image is also published at https://github.com/foxterm/UChat/releases/latest/download/UChat.dmg.
 
 ## Pricing
 

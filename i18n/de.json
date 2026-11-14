@@ -212,10 +212,15 @@
     "download": {
       "title": ["UChat AI holen"],
       "subtitle": ["Kostenlos im App Store für Mac, iPhone und iPad."],
-      "button": {
-        "alt": "UChat AI im App Store laden",
-        "label": ["Im App Store laden"]
-      },
+      "buttons": [
+        {
+          "alt": "UChat AI im App Store laden",
+          "label": ["Im App Store laden"]
+        },
+        {
+          "label": ["Notarisierte Edition für macOS"]
+        }
+      ],
       "reqs": [
         {
           "label": ["macOS"],

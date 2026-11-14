@@ -210,10 +210,15 @@
     "download": {
       "title": ["UChat AI 받기"],
       "subtitle": ["App Store에서 무료. Mac, iPhone, iPad 지원."],
-      "button": {
-        "alt": "App Store에서 UChat AI 다운로드",
-        "label": ["App Store에서 다운로드"]
-      },
+      "buttons": [
+        {
+          "alt": "App Store에서 UChat AI 다운로드",
+          "label": ["App Store에서 다운로드"]
+        },
+        {
+          "label": ["macOS 공증판 다운로드"]
+        }
+      ],
       "reqs": [
         {
           "label": ["macOS"],

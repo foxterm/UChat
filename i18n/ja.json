@@ -212,10 +212,15 @@
     "download": {
       "title": ["UChat AI を入手"],
       "subtitle": ["App Store で無料。Mac・iPhone・iPad に対応。"],
-      "button": {
-        "alt": "App Store で UChat AI をダウンロード",
-        "label": ["App Store でダウンロード"]
-      },
+      "buttons": [
+        {
+          "alt": "App Store で UChat AI をダウンロード",
+          "label": ["App Store でダウンロード"]
+        },
+        {
+          "label": ["macOS 公証版"]
+        }
+      ],
       "reqs": [
         {
           "label": ["macOS"],

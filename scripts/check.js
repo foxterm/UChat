@@ -208,6 +208,12 @@ for (const d of CFG.site.copyDirs)
       issues.push(`[外链] ${code}/index 缺少 FoxTerm 隐私政策外链`);
     if (!raw.includes(`${foxtermBase}/terms`))
       issues.push(`[外链] ${code}/index 缺少 FoxTerm 服务条款外链`);
+    if (
+      !raw.includes(
+        "https://github.com/foxterm/UChat/releases/latest/download/UChat.dmg",
+      )
+    )
+      issues.push(`[外链] ${code}/index 缺少 macOS 公证版 DMG 下载外链`);
   }
 }
 
