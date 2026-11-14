@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>UChat AI</title>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Sat, 14 Nov 2026 18:02:31 +0800</pubDate>
+            <link>https://uchat.cn</link>
+            <sparkle:version>202610281701</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/foxterm/UChat/releases/latest/download/UChat-1.0.0.dmg" length="37025622" type="application/octet-stream" sparkle:edSignature="Bx5aNpGlBMXfd8k20Z3yq/WP5tSXUnKhKJGJXckDtpYES0PzKWocm9tzxJVPmThjH3Y31Wwo17VvWKkxzzRnBg=="/>
+        </item>
+    </channel>
+</rss>
