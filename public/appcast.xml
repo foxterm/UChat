@@ -3,15 +3,16 @@
     <channel>
         <title>UChat AI</title>
         <item>
-            <title>1.0.1</title>
-            <pubDate>Sat, 14 Nov 2026 21:39:14 +0800</pubDate>
+            <title>1.0.2</title>
+            <pubDate>Sat, 14 Nov 2026 23:24:46 +0800</pubDate>
             <link>https://uchat.cn</link>
-            <sparkle:version>202611150001</sparkle:version>
-            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:version>202611150002</sparkle:version>
+            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/foxterm/UChat/releases/latest/download/UChat-1.0.1.dmg" length="37232395" type="application/octet-stream" sparkle:edSignature="IXY4yO3l8QZ8KU/Cu0OtBOXnZ6BRJ9S4Zovcv+HiHFxNWXfgwqbwrnOF9rtEio1KgJm8AKpEgywuW1+HCMFaAw=="/>
+            <enclosure url="https://github.com/foxterm/UChat/releases/latest/download/UChat-1.0.2.dmg" length="37233357" type="application/octet-stream" sparkle:edSignature="p83Fc7D1kkZ09garhBswKFE3EtA3oc2B6nS8ovQG2izfgQ7u6YGj30WLb87JZgUbvDqA7Wy+rUQxS8RUOWpJDA=="/>
             <sparkle:deltas>
-                <enclosure url="https://github.com/foxterm/UChat/releases/latest/download/UChat%20AI202611150001-202610281701.delta" sparkle:deltaFrom="202610281701" length="1832422" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="7dyw80ZWgr3z3TJEtrinN2/tmUSEaANtbppaCkSHHfGPGd92xfikfsjHHQSdLO3sQ2e3RmBuWqirdG2XaeLJBw=="/>
+                <enclosure url="https://github.com/foxterm/UChat/releases/latest/download/UChat%20AI202611150002-202611150001.delta" sparkle:deltaFrom="202611150001" length="870070" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="HA5PJMbEBbQl/r5CsFFOZFOCimr1l7AvBfOSuy/MSBZ7eg/j47WZQmLL/Rn6HzvjX4ODWaIqdP6d+GGk9WdICg=="/>
+                <enclosure url="https://github.com/foxterm/UChat/releases/latest/download/UChat%20AI202611150002-202610281701.delta" sparkle:deltaFrom="202610281701" length="1861818" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="m0n7l/gIPPIHe/aC1kgeMtk2+GmrWl7ItSy2kH0i61j3s04J0DyLtakv118Nem5Q9X9wbl32jo2OInxw7q2WDw=="/>
             </sparkle:deltas>
         </item>
     </channel>
