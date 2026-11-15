@@ -8,7 +8,7 @@
 > - Developer: FoxTerm — https://foxterm.app/
 > - Platforms: macOS 15.0+ and iOS/iPadOS 18.0+ only — no Windows, Android, or Linux desktop build
 > - Tech Stack: 100% native Swift; local GGUF inference runs in-process through llama.cpp with Metal acceleration. No Electron, no web wrappers
-> - Privacy: no account required, no analytics or tracking SDKs; your own API keys stay on-device in the system Keychain
+> - Privacy: no account required, no analytics or tracking SDKs; the app runs inside Apple's App Sandbox, your API keys stay on-device in its own storage and SSH passwords in the system Keychain
 > - Licensing: free for now, all features unlocked, no subscription and no in-app purchases
 > - Localization: 10 languages served from localized URL paths (e.g. /zh-hans/, /de/, /ja/)
 > - Related hubs: blog.foxterm.app (development blog), security.foxterm.app (advisories), github.com/foxterm (open source)
@@ -33,11 +33,13 @@ Model lists, thinking and image-generation capabilities, and default parameters 
 - **MCP servers:** add a streamable HTTP MCP server and UChat AI discovers its tools automatically, then hands them to the model alongside the built-in ones. Custom auth headers, per-tool switches, JSON import and automatic reconnect after network changes are included.
 - **12+ built-in tools, all opt-in:** web fetch, RDAP, weather, exchange rates, offline GeoLite2 IP lookup, system info, current time, key generation, Wake-on-LAN, AI image generation and more. Every tool stays inside the App Sandbox.
 - **SSH remote operations:** around 30 actions — run remote commands and capture output, manage files over SFTP, inspect server status, control Docker containers. Credentials stay in the local database, so the model never has to ask for a password.
+- **Work Mode (macOS only):** three workspace tools — directory listing, file read, file write — that reach only the folders you authorize in Settings → Work Mode. Every path is canonicalized and symlinks are resolved before it is checked against the authorized roots, so parent-directory tricks and symlink escapes are refused. Each chat carries its own workspace and defaults to none, and removing a folder revokes access immediately. Leave Work Mode off and the tools are never registered at all; iPhone and iPad have no Work Mode.
 - **Loop budget:** up to 8 model-to-tool-to-model rounds per reply.
 
 ## Privacy & Security
 
-- **Keys stay local:** your own API keys are stored only on your device (in the system Keychain where available) and sent directly to the provider you configure. They are never received, proxied or stored by the developer.
+- **App Sandbox:** every build — App Store and notarized alike — ships with the App Sandbox entitlement, so UChat AI works inside its own container, cannot read other apps' data, and touches no file outside the boundaries you set.
+- **Keys stay local:** your own API keys are stored only on your device, inside the app's own sandboxed storage, and sent directly to the provider you configure. They are never received, proxied or stored by the developer. SSH server passwords are the exception: those are kept in the system Keychain.
 - **No account:** UChat AI requires no sign-up. Prompts, conversations, model outputs and attachments stay on your device unless you send them to an AI provider you choose.
 - **Offline option:** local providers run in-process and send nothing off-device.
 - **No telemetry:** no analytics or tracking SDKs are embedded in the app.
